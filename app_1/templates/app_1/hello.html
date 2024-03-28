@@ -1,0 +1,16 @@
+{%if authentication%}
+    <h1>Hello {{name | capfirst}}</h1>
+
+    <h2>{{first_list.01}}</h2>
+
+    <h3>{{temp_object.x}}</h3>
+    <h4>Age: {{person_age | add:"2"}}</h4>
+{% endif %}
+
+{% comment "Trying out a Comment on the Template" %}
+Syntax to write a comment on a Template 
+{% endcomment %}
+
+{%for x in first_list %}
+{{ x }}
+{% endfor %}
